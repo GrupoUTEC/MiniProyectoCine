@@ -15,20 +15,15 @@
     <option name="dataSources">
       <list>
         <State>
-          <option name="id" value="b80eb30a-acff-4094-856e-d28539b231d0" />
+          <option name="id" value="35cf06d9-8a7c-4a17-b39d-34fb9853c87f" />
           <option name="name" value="Oracle XEPDB1 (DDL)" />
           <option name="dbmsName" value="ORACLE" />
           <option name="urls">
             <array>
-              <option value="file://$PROJECT_DIR$/src/DDL_Mapping" />
+              <option value="file://$PROJECT_DIR$" />
             </array>
           </option>
           <option name="outLayout" value="File per object by schema.groovy" />
-          <option name="scopes">
-            <map>
-              <entry key="$PROJECT_DIR$/src/DDL_Mapping" value="" />
-            </map>
-          </option>
         </State>
       </list>
     </option>

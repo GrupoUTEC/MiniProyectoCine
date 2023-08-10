@@ -1,0 +1,13 @@
+create table SQLPLUS_PRODUCT_PROFILE
+(
+    PRODUCT       VARCHAR2(30) not null,
+    USERID        VARCHAR2(128),
+    ATTRIBUTE     VARCHAR2(240),
+    SCOPE         VARCHAR2(240),
+    NUMERIC_VALUE NUMBER(15, 2),
+    CHAR_VALUE    VARCHAR2(240),
+    DATE_VALUE    DATE,
+    LONG_VALUE    LONG
+)
+/
+

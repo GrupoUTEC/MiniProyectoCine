@@ -1,0 +1,35 @@
+create table LOGMNR_ATTRIBUTE$
+(
+    VERSION#      NUMBER,
+    NAME          VARCHAR2(384),
+    ATTRIBUTE#    NUMBER,
+    ATTR_TOID     RAW(16),
+    ATTR_VERSION# NUMBER,
+    SYNOBJ#       NUMBER,
+    PROPERTIES    NUMBER,
+    CHARSETID     NUMBER,
+    CHARSETFORM   NUMBER,
+    LENGTH        NUMBER,
+    PRECISION#    NUMBER,
+    SCALE         NUMBER,
+    EXTERNNAME    VARCHAR2(4000),
+    XFLAGS        NUMBER,
+    SPARE1        NUMBER,
+    SPARE2        NUMBER,
+    SPARE3        NUMBER,
+    SPARE4        NUMBER,
+    SPARE5        NUMBER,
+    SETTER        NUMBER,
+    GETTER        NUMBER,
+    TOID          RAW(16) not null,
+    LOGMNR_UID    NUMBER(22),
+    LOGMNR_FLAGS  NUMBER(22),
+    constraint LOGMNR_ATTRIBUTE$_PK
+        primary key (LOGMNR_UID, TOID, VERSION#, ATTRIBUTE#)
+)
+/
+
+create index LOGMNR_I1ATTRIBUTE$
+    on LOGMNR_ATTRIBUTE$ (LOGMNR_UID, TOID, VERSION#, ATTRIBUTE#)
+/
+

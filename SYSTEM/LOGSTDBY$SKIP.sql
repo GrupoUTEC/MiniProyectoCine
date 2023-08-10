@@ -1,0 +1,24 @@
+create table LOGSTDBY$SKIP
+(
+    ERROR         NUMBER,
+    STATEMENT_OPT VARCHAR2(128),
+    SCHEMA        VARCHAR2(128),
+    NAME          VARCHAR2(261),
+    USE_LIKE      NUMBER,
+    ESC           VARCHAR2(1),
+    PROC          VARCHAR2(392),
+    ACTIVE        NUMBER,
+    SPARE1        NUMBER,
+    SPARE2        NUMBER,
+    SPARE3        VARCHAR2(2000)
+)
+/
+
+create index LOGSTDBY$SKIP_IDX1
+    on LOGSTDBY$SKIP (USE_LIKE, SCHEMA, NAME)
+/
+
+create index LOGSTDBY$SKIP_IDX2
+    on LOGSTDBY$SKIP (STATEMENT_OPT)
+/
+

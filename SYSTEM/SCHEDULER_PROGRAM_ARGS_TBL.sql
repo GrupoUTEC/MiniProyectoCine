@@ -1,0 +1,14 @@
+create table SCHEDULER_PROGRAM_ARGS_TBL
+(
+    OWNER                 VARCHAR2(128) not null,
+    PROGRAM_NAME          VARCHAR2(128) not null,
+    ARGUMENT_NAME         VARCHAR2(128),
+    ARGUMENT_POSITION     NUMBER        not null,
+    ARGUMENT_TYPE         VARCHAR2(257),
+    METADATA_ATTRIBUTE    VARCHAR2(19),
+    DEFAULT_VALUE         VARCHAR2(4000),
+    DEFAULT_ANYDATA_VALUE SYS.ANYDATA,
+    OUT_ARGUMENT          VARCHAR2(5)
+)
+/
+

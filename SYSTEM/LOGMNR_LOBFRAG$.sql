@@ -1,0 +1,18 @@
+create table LOGMNR_LOBFRAG$
+(
+    FRAGOBJ#     NUMBER,
+    PARENTOBJ#   NUMBER,
+    TABFRAGOBJ#  NUMBER,
+    INDFRAGOBJ#  NUMBER,
+    FRAG#        NUMBER not null,
+    LOGMNR_UID   NUMBER(22),
+    LOGMNR_FLAGS NUMBER(22),
+    constraint LOGMNR_LOBFRAG$_PK
+        primary key (LOGMNR_UID, FRAGOBJ#)
+)
+/
+
+create index LOGMNR_I1LOBFRAG$
+    on LOGMNR_LOBFRAG$ (LOGMNR_UID, FRAGOBJ#)
+/
+

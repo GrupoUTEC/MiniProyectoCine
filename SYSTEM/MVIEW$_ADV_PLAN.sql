@@ -1,0 +1,35 @@
+create table MVIEW$_ADV_PLAN
+(
+    STATEMENT_ID    VARCHAR2(30),
+    TIMESTAMP       DATE,
+    REMARKS         VARCHAR2(80),
+    OPERATION       VARCHAR2(30),
+    OPTIONS         VARCHAR2(255),
+    OBJECT_NODE     VARCHAR2(128),
+    OBJECT_OWNER    VARCHAR2(128),
+    OBJECT_NAME     VARCHAR2(128),
+    OBJECT_INSTANCE NUMBER,
+    OBJECT_TYPE     VARCHAR2(30),
+    OPTIMIZER       VARCHAR2(255),
+    SEARCH_COLUMNS  NUMBER,
+    ID              NUMBER,
+    PARENT_ID       NUMBER,
+    POSITION        NUMBER,
+    COST            NUMBER,
+    CARDINALITY     NUMBER,
+    BYTES           NUMBER,
+    OTHER_TAG       VARCHAR2(255),
+    PARTITION_START VARCHAR2(255),
+    PARTITION_STOP  VARCHAR2(255),
+    PARTITION_ID    NUMBER,
+    OTHER           LONG,
+    DISTRIBUTION    VARCHAR2(30),
+    CPU_COST        NUMBER,
+    IO_COST         NUMBER,
+    TEMP_SPACE      NUMBER
+)
+/
+
+comment on table MVIEW$_ADV_PLAN is 'Private plan table for estimate_mview_size operations'
+/
+

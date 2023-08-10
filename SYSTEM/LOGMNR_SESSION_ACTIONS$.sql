@@ -1,0 +1,41 @@
+create table LOGMNR_SESSION_ACTIONS$
+(
+    FLAGSRUNTIME    NUMBER default 0,
+    DROPSCN         NUMBER,
+    MODIFYTIME      TIMESTAMP(6),
+    DISPATCHTIME    TIMESTAMP(6),
+    DROPTIME        TIMESTAMP(6),
+    LCRCOUNT        NUMBER default 0,
+    ACTIONNAME      VARCHAR2(30) not null,
+    LOGMNRSESSION#  NUMBER       not null,
+    PROCESSROLE#    NUMBER       not null,
+    ACTIONTYPE#     NUMBER       not null,
+    FLAGSDEFINETIME NUMBER,
+    CREATETIME      TIMESTAMP(6),
+    XIDUSN          NUMBER,
+    XIDSLT          NUMBER,
+    XIDSQN          NUMBER,
+    THREAD#         NUMBER,
+    STARTSCN        NUMBER,
+    STARTSUBSCN     NUMBER,
+    ENDSCN          NUMBER,
+    ENDSUBSCN       NUMBER,
+    RBASQN          NUMBER,
+    RBABLK          NUMBER,
+    RBABYTE         NUMBER,
+    SESSION#        NUMBER,
+    OBJ#            NUMBER,
+    ATTR1           NUMBER,
+    ATTR2           NUMBER,
+    ATTR3           NUMBER,
+    SPARE1          NUMBER,
+    SPARE2          NUMBER,
+    SPARE3          TIMESTAMP(6),
+    SPARE4          VARCHAR2(2000),
+    PDBID           NUMBER,
+    PDB_NAME        VARCHAR2(390),
+    constraint LOGMNR_SESSION_ACTION$_PK
+        primary key (LOGMNRSESSION#, ACTIONNAME)
+)
+/
+
