@@ -17,21 +17,17 @@ public class ConexionOracle {
 
                 //Obtenemos los nombres de las personas
                 Statement statement = conn.createStatement();
-                ResultSet resultSet = statement.executeQuery("select id_pelicula, nombre, descripcion, duracion_horas, precio_horas from peliculas");
-                while (resultSet.next()){
-                    Pelicula pelicula1 =  new Pelicula
+                ResultSet resultSet = statement.executeQuery("SELECT id_pelicula, nombre, descripcion, duracion_horas, precio_horas FROM peliculas");
 
+                if (resultSet.next()){
+                    Pelicula pelicula1 =  new Pelicula
                             (resultSet.getInt("ID_PELICULA"),
                             resultSet.getString("NOMBRE"),
                             resultSet.getString("DESCRIPCION"),
                             resultSet.getDouble("DURACION_HORAS"),
                             resultSet.getInt("PRECIO_HORAS"));
-
                     System.out.println(pelicula1);
-
                 }
-
-
                 conn.close();
 
             } else {

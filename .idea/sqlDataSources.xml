@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="42dfeac6-7746-4fc3-8fc0-162c1bc32e88" name="Oracle XEPDB1 Mapping">
+      <data-sources db="1e6f517e-afb3-4414-b28c-e40ad776684a" ddl="b80eb30a-acff-4094-856e-d28539b231d0" />
+      <scope>
+        <node negative="1">
+          <node kind="database" qname="@" />
+          <node kind="schema" qname="CINEUSER" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="b80eb30a-acff-4094-856e-d28539b231d0" />
+          <option name="name" value="Oracle XEPDB1 (DDL)" />
+          <option name="dbmsName" value="ORACLE" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/src/DDL_Mapping" />
+            </array>
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+      </list>
+    </option>
+  </component>
+</project>

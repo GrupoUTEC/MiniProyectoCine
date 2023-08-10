@@ -19,6 +19,6 @@ public class Pelicula {
 
     @Override
     public String toString() {
-        return "La pelicula \"" + nombre + "\"" + " tiene una duracion de " + duracionHoras + " horas" + " y un precio por horas de " + precioHoras + " por lo tanto su costo total es de: " + (precioHoras * duracionHoras) + " su descripcion ";
+        return "La pelicula \"" + nombre + "\"" + " tiene una duracion de " + duracionHoras + " horas" + " y un precio por horas de " + precioHoras + " por lo tanto su costo total es de: " + (precioHoras * duracionHoras);
     }
 }
