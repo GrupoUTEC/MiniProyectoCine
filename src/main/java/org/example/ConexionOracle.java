@@ -1,5 +1,8 @@
 package org.example;
 
+
+import org.example.Interfaz.FramePrincipal;
+
 import java.sql.*;
 
 public class ConexionOracle {
@@ -12,8 +15,10 @@ public class ConexionOracle {
 
 
             if (conn != null) {
-                System.out.println("Conectado a la BD!");
 
+                new FramePrincipal();
+
+                System.out.println("Conectado a la BD!");
 
                 //Obtenemos los nombres de las personas
                 Statement statement = conn.createStatement();
