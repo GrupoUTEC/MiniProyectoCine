@@ -24,6 +24,11 @@
             </array>
           </option>
           <option name="outLayout" value="File per object by schema.groovy" />
+          <option name="scopes">
+            <map>
+              <entry key="$PROJECT_DIR$/src/DDL_Mapping" value="" />
+            </map>
+          </option>
         </State>
       </list>
     </option>
