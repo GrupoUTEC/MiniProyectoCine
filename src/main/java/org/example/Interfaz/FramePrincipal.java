@@ -19,7 +19,13 @@ public class FramePrincipal extends JFrame {
     Label label1 = new Label();
 
 
-    public FramePrincipal(){
+    public static FramePrincipal getFrame() {
+            return frame;
+    }
+
+
+
+    private FramePrincipal() {
 
         label1.setText("Cartelera");
         label1.setFont((new Font("Chillax Medium", Font.CENTER_BASELINE, 30)));
