@@ -1,24 +1,17 @@
 package org.example;
 
-public class Pelicula {
+public class Pelicula extends AudioVisuales {
 
-    public int idPelicula;
-    public String nombre;
-    public String descripcion;
-    public double duracionHoras;
-    public int precioHoras;
-
-    public Pelicula(int idPelicula, String nombre, String descripcion, double duracionHoras, int precioHoras) {
-        this.idPelicula = idPelicula;
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.duracionHoras = duracionHoras;
-        this.precioHoras = precioHoras;
+    public Pelicula(int idAudiovisual, String nombre, String descripcion, double duracionHoras, int precioHoras) {
+        super(idAudiovisual, nombre, descripcion, duracionHoras, precioHoras);
     }
+
 
 
     @Override
     public String toString() {
-        return "La pelicula \"" + nombre + "\"" + " tiene una duracion de " + duracionHoras + " horas" + " y un precio por horas de " + precioHoras + " por lo tanto su costo total es de: " + (precioHoras * duracionHoras);
+        return "La pelicula \"" + nombre + "\"" + " tiene una duracion de " + duracionHoras + " horas" + " y un precio por horas de " + precioHoras + " por lo tanto su costo total es de: " + (precioHoras * duracionHoras) + "\n" +"*".repeat(133);
     }
+
+
 }
